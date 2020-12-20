@@ -17,3 +17,10 @@ To watch app, open url:
 localhost:9000
 ```
 
+## stats
+
+| container | mem |
+| ---       | --- |
+| frontend (alpine linux + node14) min (run)   | 200 MB |
+| frontend (alpine linux + node14) max (build) | 400 MB |
+| nginx | 2 MB |
