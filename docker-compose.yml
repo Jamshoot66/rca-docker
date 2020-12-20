@@ -1,10 +1,14 @@
 version: '3'
-services: 
-    fronend:
+services:
+    frontend:
         entrypoint: ['yarn', 'start:docker']
-        volumes: 
+        volumes:
             - ./app:/usr/app
-        ports: 
-            - 3000:3000
-        build: 
+        build:
             context: .
+    nginx:
+        image: nginx
+        volumes:
+            - ./nginx/templates:/etc/nginx/templates
+        ports:
+            - 9000:80
