@@ -16,6 +16,14 @@ services:
             context: .
             dockerfile: Dockerfile_buster
 
+    frontend_stretch:
+        entrypoint: ['yarn', 'start:docker']
+        volumes:
+            - ./app:/usr/app
+        build:
+            context: .
+            dockerfile: Dockerfile_stretch
+
     nginx:
         image: nginx
         volumes:
