@@ -1,11 +1,21 @@
 version: '3'
 services:
-    frontend:
+    frontend_alpine:
         entrypoint: ['yarn', 'start:docker']
         volumes:
             - ./app:/usr/app
         build:
             context: .
+            dockerfile: Dockerfile_alpine
+    
+    frontend_buster:
+        entrypoint: ['yarn', 'start:docker']
+        volumes:
+            - ./app:/usr/app
+        build:
+            context: .
+            dockerfile: Dockerfile_buster
+
     nginx:
         image: nginx
         volumes:
