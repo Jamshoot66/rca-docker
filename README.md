@@ -25,4 +25,5 @@ localhost:9000
 | frontend (alpine linux + node14) min (run)   | 200 MB |
 | frontend (buster + node14) min (run)   | 170 MB |
 | frontend (stretch + node14) min (run)   | 170 MB |
+| frontend (stretch slim + node14) min (run)   | 170 MB |
 | nginx | 2 MB |
