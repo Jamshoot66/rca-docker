@@ -21,6 +21,7 @@ localhost:9000
 
 | container | mem |
 | ---       | --- |
-| frontend (alpine linux + node14) min (run)   | 200 MB |
 | frontend (alpine linux + node14) max (build) | 400 MB |
+| frontend (alpine linux + node14) min (run)   | 200 MB |
+| frontend (buster + node14) min (run)   | 170 MB |
 | nginx | 2 MB |
